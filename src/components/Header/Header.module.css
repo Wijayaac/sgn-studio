@@ -1,0 +1,176 @@
+.sr-only {
+	border: 0;
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	float: left
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: transparent;
+	z-index: 9999;
+	transition: background-color .3s ease-in-out;
+}
+
+.scrolled {
+	background-color: #fff;
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	max-width: 1440px;
+	margin: 0 auto
+}
+
+@media screen and (max-width: 992px) {
+	.header__wrapper {
+		padding: 20px
+	}
+}
+
+.header__logo img {
+	object-fit: contain;
+	width: 144px;
+	height: 165px
+}
+
+@media screen and (max-width: 992px) {
+	.header__logo {
+		position: relative;
+		z-index: 999
+	}
+
+	.header__logo img {
+		width: 60px;
+		height: auto
+	}
+}
+
+.header__toggle {
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 9999
+}
+
+@media screen and (max-width: 992px) {
+	.header__toggle {
+		display: block
+	}
+}
+
+.header__toggle .close,
+.header__toggle .open {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity .3s ease-in-out
+}
+
+.header__toggle .open,
+.header__toggle[aria-expanded=true] .close {
+	opacity: 1
+}
+
+.header__toggle[aria-expanded=true] .open {
+	opacity: 0
+}
+
+.header__nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+	.header__nav {
+		flex-direction: column;
+		height: 100%
+	}
+}
+
+.header ul {
+	list-style: none;
+	padding: 0
+}
+
+.nav {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 992px) {
+	.nav {
+		width: 100vw;
+		position: absolute;
+		background-color: #fff;
+		height: 100vh;
+		transform: translate(100%);
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		transition: transform .3s ease-in-out
+	}
+
+	.nav--cta {
+		display: none
+	}
+}
+
+.nav[data-visible=true] {
+	transform: translate(0)
+}
+
+.nav__item {
+	margin: 0 10px
+}
+
+@media screen and (max-width: 992px) {
+	.nav__item {
+		margin: 10px 0
+	}
+}
+
+.nav__item--mobile {
+	display: none
+}
+
+@media screen and (max-width: 992px) {
+	.nav__item--mobile {
+		display: block
+	}
+}
+
+.nav__link {
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color .3s ease-in-out;
+}
+
+.scrolled .nav__link {
+	color: #000;
+}
+
+.nav__link--cta {
+	display: flex
+}
