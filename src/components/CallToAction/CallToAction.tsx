@@ -3,6 +3,7 @@ import React from "react";
 
 import styles from "./CallToAction.module.css";
 
+// TODO: update the heading content and phone number
 function CallToAction() {
   return (
     <div className={styles.cta}>

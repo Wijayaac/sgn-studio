@@ -2,7 +2,9 @@ import React from "react";
 
 import styles from "./Footer.module.css";
 import Image from "next/image";
+import SocialIcon from "../SocialIcon";
 
+// TODO: update logo
 function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -23,6 +25,7 @@ function Footer() {
         <div className={styles["column"]}>
           <p className='h4'>Kontak</p>
           <p>TEL. +62 812 393 61110 </p>
+          <SocialIcon />
         </div>
       </div>
     </footer>

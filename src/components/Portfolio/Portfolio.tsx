@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./Portfolio.module.css";
+// TODO: update image to be the actual image, migh be using json and read data from it
 
 function Portfolio() {
   return (
@@ -73,7 +74,7 @@ function Portfolios() {
     </div>
   );
 }
-
+// TODO: add ability to filter the portfolio
 function Header() {
   return (
     <div className={styles["portfolio-header"]}>

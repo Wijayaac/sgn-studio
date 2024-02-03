@@ -4,6 +4,7 @@ import styles from "./AboutUs.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+// TODO: find more content for this page
 function AboutUs() {
   return (
     <div className={styles.about}>
