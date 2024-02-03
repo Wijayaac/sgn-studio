@@ -12,7 +12,7 @@ function Footer() {
       <div className={styles["footer-wrapper"]}>
         <div className={styles["column"]}>
           <div className={styles["footer__logo"]}>
-            <Image src='/vercel.svg' width={240} height={80} alt='logo' />
+            <Image src='/logo-footer.png' width={240} height={80} alt='logo' />
           </div>
           <div className={styles["footer__text"]}>
             <p>© {year} Your Company</p>

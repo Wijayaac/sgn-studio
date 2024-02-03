@@ -47,6 +47,11 @@
 	color: #fff
 }
 
+.banner-description span {
+	font-weight: 700;
+
+}
+
 /* TODO: Add hover effect */
 .banner-cta {
 	display: inline-block;

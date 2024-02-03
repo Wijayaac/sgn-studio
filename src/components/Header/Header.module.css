@@ -41,10 +41,15 @@
 	}
 }
 
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+
 .header__logo img {
 	object-fit: contain;
-	width: 144px;
-	height: 165px
+	width: 60px;
+	height: auto
 }
 
 @media screen and (max-width: 992px) {
