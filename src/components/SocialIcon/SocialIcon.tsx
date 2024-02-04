@@ -6,18 +6,18 @@ function SocialIcon() {
   return (
     <ul className={styles.icons}>
       <li>
-        <a href='http://whatsapp.com' target='_blank' rel='noopener noreferrer'>
+        <a href='https://api.whatsapp.com/send/?phone=6281239361110&text&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer'>
           <WhatsAppIcon />
         </a>
       </li>
       <li>
-        <a href='http://' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.instagram.com/sgn.studio/' target='_blank' rel='noopener noreferrer'>
           <InstagramIcon />
         </a>
       </li>
       <li>
-        <a href='http://' target='_blank' rel='noopener noreferrer'>
-          <FacebookIcon />
+        <a href='mailto:Sgnstudio09@gmail.com' target='_blank' rel='noopener noreferrer'>
+          <MailIcon />
         </a>
       </li>
     </ul>
@@ -50,6 +50,14 @@ function FacebookIcon({ size = 32 }) {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width={size} height={size} viewBox='0 0 24 24'>
       <path fill='currentColor' d='M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95'></path>
+    </svg>
+  );
+}
+
+function MailIcon({ size = 32 }) {
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' width={size} height={size} viewBox='0 0 24 24'>
+      <path fill='currentColor' d='M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z'></path>
     </svg>
   );
 }

@@ -58,7 +58,7 @@ function Header() {
     <header className={`${styles["header"]} ${isScrolled ? styles["scrolled"] : "test"}`} ref={header}>
       <div className={styles["header__wrapper"]}>
         <div className={styles["header__logo"]}>
-          <Image src='/logo.png' width={256} height={256} alt='SGN Logo' />
+          <Image src='/logo-header.png' width={256} height={256} alt='SGN Logo' />
         </div>
         <button className={styles["header__toggle"]} aria-controls='header__nav' aria-expanded='false' ref={headerToggle}>
           <span className={styles["sr-only"]}>Menu</span>

@@ -14,7 +14,7 @@ function CallToAction() {
             <h2>Butuh konsultasi dahulu ?</h2>
             <p> Hubungi kami kapan saja, kami siap membantu</p>
           </div>
-          <a className={`${styles["cta-cta"]} btn`} href='https://api.whatsapp.com/send?phone=62895354900000&text=Halo%20saya%20ingin%20membuat%20website%20atau%20aplikasi%20mobile%20app%20untuk%20bisnis%20saya'>
+          <a className={`${styles["cta-cta"]} btn`} target='_blank' href='https://api.whatsapp.com/send/?phone=6281239361110&text&type=phone_number&app_absent=0'>
             Hubungi Kami
           </a>
         </div>

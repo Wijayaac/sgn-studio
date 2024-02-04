@@ -70,6 +70,10 @@
 
 	.about-image {
 		margin-bottom: 32px;
+	}
 
+	.about-image img {
+		max-height: 240px;
+		object-fit: cover;
 	}
 }

@@ -56,19 +56,19 @@ function Portfolios() {
         </div>
       </div>
       <div className={styles["portfolio-item"]}>
-        <Image width={720} height={480} src='/portfolios/pecatu-main.png' alt='portfolio' />
+        <Image width={720} height={480} src='/portfolios/canggu-villa-2.jpeg' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Pecatu – Bali </h3>
-            <p>Project Kolaborasi</p>
+            <h3>Canggu - Villa </h3>
+            <p>Project Individual</p>
           </div>
         </div>
       </div>
       <div className={styles["portfolio-item"]}>
-        <Image width={720} height={480} src='/portfolios/surabaya-main.png' alt='portfolio' />
+        <Image width={720} height={480} src='/portfolios/canggu-villa-1.jpeg' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Citraland – Surabaya</h3>
+            <h3>Canggu - Villa</h3>
             <p>Project Individual</p>
           </div>
         </div>
@@ -92,11 +92,11 @@ function Portfolios() {
         </div>
       </div>
       <div className={styles["portfolio-item"]}>
-        <Image width={720} height={480} src='/portfolios/denpasar-main-2.png' alt='portfolio' />
+        <Image width={720} height={480} src='/portfolios/denpasar-backyard.jpeg' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Denpasar – Bali</h3>
-            <p>Project Kolaborasi</p>
+            <h3>Denpasar – Backyard</h3>
+            <p>Project Individual</p>
           </div>
         </div>
       </div>
