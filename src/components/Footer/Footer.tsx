@@ -15,7 +15,7 @@ function Footer() {
             <Image src='/logo-footer.png' width={240} height={80} alt='logo' />
           </div>
           <div className={styles["footer__text"]}>
-            <p>© {year} Your Company</p>
+            <p>© {year} SGN Studio</p>
           </div>
         </div>
         <div className={`${styles["column"]} ${styles["column--wider"]}`}>

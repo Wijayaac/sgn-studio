@@ -70,7 +70,8 @@
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
-	z-index: 9999
+	z-index: 9999;
+	background-color: #fff;
 }
 
 @media screen and (max-width: 992px) {
@@ -178,4 +179,11 @@
 
 .nav__link--cta {
 	display: flex
+}
+
+@media screen and (max-width: 992px) {
+	.nav__link {
+		color: #000;
+	}
+
 }

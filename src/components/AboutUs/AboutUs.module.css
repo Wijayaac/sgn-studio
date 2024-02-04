@@ -33,6 +33,7 @@
 	justify-content: space-between;
 }
 
+
 .about-image {
 	flex: 0 0 40%;
 	max-width: 40%;
@@ -52,4 +53,23 @@
 
 .about-stat p {
 	margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 992px) {
+	.about-wrapper {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.about-image,
+	.about-content {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.about-image {
+		margin-bottom: 32px;
+
+	}
 }

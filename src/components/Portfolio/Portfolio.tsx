@@ -23,8 +23,8 @@ function Portfolios() {
         <Image width={720} height={480} src='/portfolios/canggu-main.png' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Project 1</h3>
-            <p>Deskripsi project 1</p>
+            <h3>Canggu - Bali</h3>
+            <p>Project Kolaborasi</p>
           </div>
         </div>
       </div>
@@ -32,8 +32,8 @@ function Portfolios() {
         <Image width={720} height={480} src='/portfolios/denpasar-main.png' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Project 2</h3>
-            <p>Deskripsi project 2</p>
+            <h3>Denpasar – Bali</h3>
+            <p>Project Individual</p>
           </div>
         </div>
       </div>
@@ -41,8 +41,8 @@ function Portfolios() {
         <Image width={720} height={480} src='/portfolios/jembrana-main.png' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Project 3</h3>
-            <p>Deskripsi project 3</p>
+            <h3>Jembrana – Bali</h3>
+            <p>Project Individual</p>
           </div>
         </div>
       </div>
@@ -50,8 +50,8 @@ function Portfolios() {
         <Image width={720} height={480} src='/portfolios/mengwi-main.png' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Project 4</h3>
-            <p>Deskripsi project 4</p>
+            <h3>Mengwi – Bali</h3>
+            <p>Project Individual </p>
           </div>
         </div>
       </div>
@@ -59,8 +59,8 @@ function Portfolios() {
         <Image width={720} height={480} src='/portfolios/pecatu-main.png' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Project 5</h3>
-            <p>Deskripsi project 5</p>
+            <h3>Pecatu – Bali </h3>
+            <p>Project Kolaborasi</p>
           </div>
         </div>
       </div>
@@ -68,8 +68,35 @@ function Portfolios() {
         <Image width={720} height={480} src='/portfolios/surabaya-main.png' alt='portfolio' />
         <div className={styles["portfolio-text"]}>
           <div>
-            <h3>Project 6</h3>
-            <p>Deskripsi project 6</p>
+            <h3>Citraland – Surabaya</h3>
+            <p>Project Individual</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles["portfolio-item"]}>
+        <Image width={720} height={480} src='/portfolios/canggu-main-2.png' alt='portfolio' />
+        <div className={styles["portfolio-text"]}>
+          <div>
+            <h3>Canggu – Bali</h3>
+            <p>Project Kolaborasi</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles["portfolio-item"]}>
+        <Image width={720} height={480} src='/portfolios/kerobokan-main.png' alt='portfolio' />
+        <div className={styles["portfolio-text"]}>
+          <div>
+            <h3>Kerobokan – Bali</h3>
+            <p>Project Individual</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles["portfolio-item"]}>
+        <Image width={720} height={480} src='/portfolios/denpasar-main-2.png' alt='portfolio' />
+        <div className={styles["portfolio-text"]}>
+          <div>
+            <h3>Denpasar – Bali</h3>
+            <p>Project Kolaborasi</p>
           </div>
         </div>
       </div>
@@ -81,7 +108,7 @@ function Header() {
   return (
     <div className={styles["portfolio-header"]}>
       <div>
-        <h2>Portfolio pilihan</h2>
+        <h2>Portfolio</h2>
         <p>Kami sudah mengerjakan banyak project yang dapat menjadi inspirasi anda</p>
       </div>
       <ul className={styles["portfolio-action"]}>

@@ -63,8 +63,12 @@ function Header() {
         <button className={styles["header__toggle"]} aria-controls='header__nav' aria-expanded='false' ref={headerToggle}>
           <span className={styles["sr-only"]}>Menu</span>
           <span className={styles["open"]}>
-            <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 15 15'>
-              <path fill='black' fillRule='evenodd' d='M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1zM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5' clipRule='evenodd' />
+            <svg xmlns='http://www.w3.org/2000/svg' width={144} height={144} viewBox='0 0 48 48'>
+              <g fill='none' stroke='#000' strokeLinecap='round' strokeLinejoin='round' strokeWidth={4}>
+                <path d='M7.94971 11.9497H39.9497'></path>
+                <path d='M7.94971 23.9497H39.9497'></path>
+                <path d='M7.94971 35.9497H39.9497'></path>
+              </g>
             </svg>
           </span>
           <span className={styles["close"]}>

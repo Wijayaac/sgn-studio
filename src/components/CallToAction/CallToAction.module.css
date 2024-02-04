@@ -27,3 +27,22 @@
 .cta-text {
 	margin-right: 40px;
 }
+
+@media screen and (max-width: 992px) {
+	.cta {
+		padding-top: 280px;
+	}
+
+	.cta-wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px;
+		max-width: 100%;
+	}
+
+	.cta-text {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+}

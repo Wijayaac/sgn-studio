@@ -63,3 +63,26 @@
 	text-decoration: none;
 	margin-top: 40px;
 }
+
+@media screen and (max-width: 992px) {
+	.banner {
+		min-height: 700px;
+	}
+
+	.banner-content {
+		margin-bottom: 60px;
+	}
+
+	.banner-title {
+		font-size: 32px;
+	}
+
+	.banner-description {
+		font-size: 16px;
+	}
+
+	.banner-cta {
+		font-size: 14px;
+	}
+
+}
