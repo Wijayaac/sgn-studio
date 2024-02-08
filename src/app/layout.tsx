@@ -5,7 +5,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const poppins = Poppins({ weight: ["400", "500", "600"], subsets: ["latin"] });
-
+// TODO: Add Google analytics
+// TODO: host the website in the production domain
+// TODO: add animation
 export const metadata: Metadata = {
   title: "SGN Studio | Konsep desain bergaya NATURAL dan KONTEMPORER",
   description: "Konsep desain bergaya NATURAL dan KONTEMPORER Berfokus pada KEHARMONISAN",
