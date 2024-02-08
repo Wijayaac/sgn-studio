@@ -7,7 +7,7 @@ import styles from "./CallToAction.module.css";
 function CallToAction() {
   return (
     <div className={styles.cta}>
-      <Image src='/cta.png' alt='Banner' width={1920} height={480} className={styles["cta-image"]} />
+      <Image src='/cta.jpg' alt='Banner' width={1920} height={480} className={styles["cta-image"]} />
       <div className='section'>
         <div className={styles["cta-wrapper"]}>
           <div className={styles["cta-text"]}>

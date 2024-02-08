@@ -73,7 +73,7 @@
 	}
 
 	.about-image img {
-		max-height: 240px;
+		max-height: 180px;
 		object-fit: cover;
 	}
 }

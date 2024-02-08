@@ -12,7 +12,7 @@ function AboutUs() {
         <div className='section'>
           <div className={`${styles["about-wrapper"]}`}>
             <div className={styles["about-image"]}>
-              <Image src='/about-sketch.png' alt='About' width={480} height={360} />
+              <Image src='/about-sketch.jpg' alt='About' width={480} height={360} />
             </div>
             <div className={styles["about-content"]}>
               <h2 className={styles["about-title"]}>PERENCANAAN DARI PEDOMAN DESAIN</h2>
@@ -23,7 +23,7 @@ function AboutUs() {
                 <p className='h2'>20+</p>
                 <span>PROFESSIONAL PROJECT</span>
               </div>
-              <Link className={`${styles["about-cta"]} btn`} href='/portfolio'>
+              <Link className={`${styles["about-cta"]} btn`} href='#portfolio'>
                 view our portfolio
               </Link>
             </div>
