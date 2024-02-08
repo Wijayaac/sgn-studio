@@ -25,6 +25,9 @@ function ContactForm() {
 
   useEffect(() => {
     document.body.classList.add("contact-page");
+    return () => {
+      document.body.classList.remove("contact-page");
+    };
   }, []);
 
   return (
