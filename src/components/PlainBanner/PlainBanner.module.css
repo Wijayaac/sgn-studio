@@ -1,0 +1,13 @@
+.banner {
+	min-height: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.banner h1 {
+	margin-bottom: 16px;
+	font-size: 48px;
+}

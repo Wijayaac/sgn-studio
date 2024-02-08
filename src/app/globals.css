@@ -84,6 +84,7 @@ button {
 	background-color: transparent;
 	outline: none;
 	border: none;
+	cursor: pointer;
 }
 
 .section {
@@ -127,4 +128,13 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+/* header */
+.contact-page .header {
+	background-color: #fff;
+}
+
+.contact-page .nav__link {
+	color: #000;
 }

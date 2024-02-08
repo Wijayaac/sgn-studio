@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useRef, useEffect, useState } from "react";
 
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 // TODO: Update the logo, navigation
 function Header() {
@@ -55,10 +56,12 @@ function Header() {
   };
 
   return (
-    <header className={`${styles["header"]} ${isScrolled ? styles["scrolled"] : "test"}`} ref={header}>
+    <header className={`${styles["header"]} ${isScrolled ? styles["scrolled"] : ""} header`} ref={header}>
       <div className={styles["header__wrapper"]}>
         <div className={styles["header__logo"]}>
-          <Image src='/logo-header.png' width={256} height={256} alt='SGN Logo' />
+          <Link href='/'>
+            <Image src='/logo-header.png' width={256} height={256} alt='SGN Logo' />
+          </Link>
         </div>
         <button className={styles["header__toggle"]} aria-controls='header__nav' aria-expanded='false' ref={headerToggle}>
           <span className={styles["sr-only"]}>Menu</span>
@@ -83,19 +86,19 @@ function Header() {
         <nav className={styles["nav"]} data-visible='false' ref={headerNav}>
           <ul className={styles["header__nav"]}>
             <li className={styles["nav__item"]}>
-              <a href='#tentang-kami' className={styles["nav__link"]}>
+              <a href='/#tentang-kami' className={`${styles["nav__link"]} nav__link`}>
                 Tentang Kami
               </a>
             </li>
             <li className={styles["nav__item"]}>
-              <a href='#portfolio' className={styles["nav__link"]}>
+              <a href='/#portfolio' className={`${styles["nav__link"]} nav__link`}>
                 Portfolio
               </a>
             </li>
             <li className={styles["nav__item"]}>
-              <a href='index.html' className={styles["nav__link"]}>
+              <Link href='/contact' className={`${styles["nav__link"]} nav__link`}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
