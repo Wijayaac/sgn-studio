@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     to: process.env.SMTP_USERNAME,
     subject: `Message from ${name} <${email}>`,
     replyTo: email,
-    html: `<p>Nama : ${name}</p><p>Email : ${email}</p><p>Pesan : ${message}</p>`,
+    html: `<p>Nama : ${name}</p><p>Email pengirim: ${email}</p><p>Pesan : ${message}</p>`,
   };
 
   const sendMailPromise = () => {
