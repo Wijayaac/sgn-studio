@@ -131,10 +131,12 @@ ul {
 }
 
 /* header */
-.contact-page .header {
+.contact-page .header,
+.confirmation-page .header {
 	background-color: #fff;
 }
 
-.contact-page .nav__link {
+.contact-page .nav__link,
+.confirmation-page .nav__link {
 	color: #000;
 }
