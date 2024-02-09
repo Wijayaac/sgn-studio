@@ -1,10 +1,15 @@
-import { type NextRequest, NextResponse } from "next/server";
+"use server";
+
+import { redirect } from "next/navigation";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
-// TODO: set recipient to the actual email address
 
-export async function POST(request: NextRequest) {
-  const { email, name, message } = await request.json();
+export async function sendEmail(formData: FormData) {
+  const rawFormData = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
 
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -17,9 +22,9 @@ export async function POST(request: NextRequest) {
   const mailOptions: Mail.Options = {
     from: process.env.SMTP_USERNAME,
     to: process.env.SMTP_USERNAME,
-    subject: `Message from ${name} <${email}>`,
-    replyTo: email,
-    html: `<p>Nama : ${name}</p><p>Email : ${email}</p><p>Pesan : ${message}</p>`,
+    subject: `Message from ${rawFormData.name} <${rawFormData.email}>`,
+    replyTo: rawFormData.email as string,
+    html: `<p>Nama : ${rawFormData.name}</p><p>Email pengirim: ${rawFormData.email}</p><p>Pesan : ${rawFormData.message}</p>`,
   };
 
   const sendMailPromise = () => {
@@ -36,8 +41,8 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: "Email sent successfully" });
   } catch (error) {
-    return NextResponse.json({ error }, { status: 500 });
+    console.error(error);
   }
+  redirect("/thank-you");
 }

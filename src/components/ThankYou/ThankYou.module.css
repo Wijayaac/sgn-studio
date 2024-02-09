@@ -1,0 +1,20 @@
+.section {
+	max-width: 720px;
+	margin: 0 auto;
+	min-height: 480px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.wrapper h1 {
+	margin-bottom: 16px;
+}
+
+.wrapper p {
+	margin-bottom: 24px;
+}
