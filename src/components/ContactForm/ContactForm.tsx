@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 import styles from "./ContactForm.module.css";
-import { sendMail } from "@/utils/send-mail";
+import { sendEmail } from "@/app/lib/action";
 
 export type Inputs = {
   name: string;
@@ -15,13 +15,8 @@ export type Inputs = {
 function ContactForm() {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
-
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    sendMail(data);
-  };
 
   useEffect(() => {
     document.body.classList.add("contact-page");
@@ -32,7 +27,7 @@ function ContactForm() {
 
   return (
     <div className={styles["form-wrapper"]}>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form action={sendEmail}>
         <div className={styles.field}>
           <label htmlFor='name'>Nama *</label>
           <input {...register("name", { required: true })} id='name' />
