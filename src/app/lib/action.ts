@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
@@ -22,7 +21,7 @@ export async function sendEmail(formData: FormData) {
 
   const mailOptions: Mail.Options = {
     from: process.env.SMTP_USERNAME,
-    to: process.env.SMTP_USERNAME,
+    to: "Sgnstudio09@gmail.com",
     subject: `Message from ${rawFormData.name} <${rawFormData.email}>`,
     replyTo: rawFormData.email as string,
     html: `<p>Nama : ${rawFormData.name}</p><p>Email pengirim: ${rawFormData.email}</p><p>Pesan : ${rawFormData.message}</p>`,
